@@ -57,7 +57,6 @@ const deleteCheck = (e) => {
 
   //Check Item
   if (item.classList[0] === "complete-btn") {
-    console.log("Check completed");
     const todo = item.parentElement;
     todo.classList.toggle("completed");
 
@@ -172,7 +171,7 @@ const checkLocalStorage = () => {
 };
 
 //event listeners
-todoButton.addEventListener("click", addTodo);
+todoButton.addEventListener("change", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filterOption.addEventListener("click", filterTodo);
 document.addEventListener("DOMContentLoaded", getTodos);
