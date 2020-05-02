@@ -34,6 +34,10 @@ form {
   flex-wrap: wrap;
 }
 
+form input {
+  width: 100%;
+}
+
 form input,
 form button {
   padding: 0.5rem;
@@ -67,6 +71,7 @@ form button:hover {
 }
 
 .todo {
+  width: 100%;
   margin: 0.5rem;
   background: whitesmoke;
   color: black;
