@@ -8,6 +8,7 @@ const filterOption = document.querySelector(".filter-todo");
 const addTodo = (event) => {
   event.preventDefault();
 
+  console.log("Add todo");
   if (todoInput.value === "") {
     alert("Please enter a task");
     return;
@@ -171,8 +172,8 @@ const checkLocalStorage = () => {
 };
 
 //event listeners
-todoButton.addEventListener("change", addTodo);
+todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
-filterOption.addEventListener("click", filterTodo);
+filterOption.addEventListener("change", filterTodo);
 document.addEventListener("DOMContentLoaded", getTodos);
 document.addEventListener("DOMContentLoaded", filterTodo);
